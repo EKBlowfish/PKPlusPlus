@@ -1,0 +1,269 @@
+PK++ Mod for Painkiller
+=======================
+
+Date:      15:44 16/05/2005
+Site:      http://www.pkeuro.com
+Contact:   mods@pkeuro.com
+Version:   1.2.1.64
+
+PK++ 1.2.1.64
+=============
+
+	FIX: Simplehud switch weapons is now reflected in the HUD
+	FIX: Console now works in menu (PCF bug)
+	FIX: Blackedition now shows PK++ 'desktop'
+	ADD: Cfg.DirectInput allows setting of directinput/windowsinput for mouse and keyboard. \directinput from console.
+	ADD: Simplehudshadow to toggle font shadowing on simplehud
+	ADD: PK++ GUI options for text shadowing
+	ADD: Cfg.TeamScoresShadowLevel for custom shadowing level
+	ADD: Cfg.ShowFPSShadowLevel for custom shadowing level
+	ADD: Cfg.ShowPingShadowLevel for custom shadowing level
+	ADD: Cfg.ShowTimerShadowLevel for custom shadowing level
+	ADD: Blowfish command from console to load up a sample config (remember to back-up your own config first)
+	ADD: TextureQuality command from console. Range 0-31
+	ADD: TextureQualityArchitecture command from console. Range 0-31
+	ADD: TextureQualityCharacters command from console. Range 0-31
+	ADD: TextureQualitySkies command from console. Range 0-31
+	ADD: TextureQualityWeapons command from console. Range 0-31
+	ADD: Cfg.HitSounds | \HitSounds for disabling hit sounds 
+	ADD: Cfg.NoGong | \NoGong to remove gong sound per minute (voice sounds remain)
+	ADD: Cfg.NoMPComments | \NoMPComments to remove MP death commentry (initial respawn comment remains; 'fight' etc.)
+	ADD: Cfg.BrightSkins | \BrightSkins to disable brightskins
+	CHANGE: PK++ GUI tidy
+	CHANGE: Restartmap re-enabled at end-of-match
+	CHANGE: Some HUD text slight position changes
+	CHANGE: Teamscores tidy
+	NOTE: Weapon switch using mousewheel seems to work best using Cfg.WheelSensitivity = 3
+
+PK++ 1.1.1.64
+=============
+
+	FIX: Shotgun ammo now showing in specmode
+	FIX: Player demos are named from POV player first - does not apply to spectator demos
+	FIX: Restartmap during final scoreboard causing spectator lockout
+	ADD: Minimal self-integrity and validation check
+	ADD: Public notification on server when a non-pk++ client is being used. Cfg.ImpureClientWarning | ImpureClientWarning 1/0
+	ADD: TeamScoresShadow | Cfg.TeamScoresShadow for font shadow
+	ADD: ShowPingX ShowPingY | Cfg.ShowPingX Cfg.ShowPingY for ShowPing position.
+	ADD: playdemo and recorddemo command aliases
+	CHANGE: Text shadow effects increased slightly - optional to disable for each HUD item
+	CHANGE: Small position changes on some HUD items
+	CHANGE: Quad respawn time set to 2 minutes
+
+PK++ 1.0.1.64
+=============
+
+ CHANGE: Minor alteration to rocketfix based on mass public testing. Tweaking now locked.
+ ADD: \MOTD - sets the server MOTD from the console (intended for use with rcon)
+ ADD: \PitabotEnabled [1/0] | Cfg.PitabotEnabled - sets pitabot server component active/inactive.
+ FIX: Forcejoin/Forcespectator server bug fixes
+
+PK++ 0.9.1.64
+=============
+
+ CHANGE: Support for PCF version 1.64
+ CHANGE: Cfg.RocketFix default set to true
+ FIX: Pitabot minor fix for players joining game
+ FIX: Removed temptation to add old changelog to current version to make it seem more
+ FIX: Freezer is now showing on simplehud
+ FIX: Ammobackground is now working correct on simplehud
+ ADD: \version command to check local PK++ version
+ ADD: DisableHud [0/1] disables hud for map images
+ ADD: \camerayaw <degrees> | \camerapitch <degrees> for mapper image support
+
+ ADD: Orange and Pink options for brightskins
+ CHANGE: Low gfx effects re-enabled
+ FIX: Low gfx settings causing gradual fps loss
+ FIX: PCF bug, decal stay time set to 'Off' failed to save to config
+ ADD: \nodecals [0/1] for toggling decal rendering ingame
+ ADD: Cfg.ShowTimerShadow, Cfg.ShowFPSShadow, Cfg.ShowPingShadow added 
+
+PK++ 0.9.1.62
+=============
+
+ ADD: Cfg.RocketFix option for ProPlus rocket fix in non-ProPlus gamemode
+ ADD: Cfg.FallingDamage option for falling damage removal
+ ADD: Cfg.AutoScreenshot | \autoscreenshot [0/1] Takes screenshot 5 seconds after match end
+ FIX: Restartmap/Reloadmap respawning players during process
+ FIX: Autorecord naming errors
+ FIX: Overtime in tdm faulty
+ FIX: Bot respawning crashing server in some circumstances
+ FIX: Allready command malfunctioning
+ FIX: Bots continuing match play
+ FIX: PCF mode rockets
+ CHANGE: MOTD now shows server version and rocketfix on/off
+ CHANGE: Low gfx, No* effects temporarily disabled (don't panic - they will be enabled later)
+
+PK++ 0.8.1.62
+=============
+
+ ADD: WarmUp damage, 100/200, item pickup, infinite ammo, all weapons - <callvote> \warmupdamage 0/1
+ ADD: ProPlus PK Rocket Jump fix! \rocketfactor and \rocketfactororder. Test differences on dedicated server. See included document and readme.
+ ADD: \serverpassword <password> - sets server password.
+ ADD: Advanced PiTaBOT Scorebot Support - http://pitabot.sourceforge.net
+ ADD: MOTD Support for servers. Set in Cfg.MOTD, semicolon for line return
+ ADD: Hitsounds / killsounds in spectator HUD
+ ADD: Console commands/netsettings gui disable, Cfg.TournamentSettings = true/false
+ ADD: Low graphics settings - 
+	ADD: NoExplosions [0/1]
+	ADD: NoBlood [0/1]
+	ADD: NoGibs [0/1]
+	ADD: NoSmoke [0/1]
+	ADD: NoSpawnEffects [0/1]
+	ADD: NoFlames [0/1]
+ FIX: Teamscores not resetting correctly on clients
+ FIX: Initial health/armour in warmup incorrect until first hit
+ FIX: PCF TIMER BUG! Items were not respawning on time because of PCF coding
+ FIX: Bots cheating in Voosh
+ FIX: Non-daily log file missing file extension
+ FIX: Extremely rare overtime bug
+ FIX: Minor map restart issues
+ CHANGE: Minor reformatting on weapon statistics
+ CHANGE: Faster authenication for PK++ clients on servers
+ CHANGE: Duelqueue tweaked (tied game doesn't exchange players)
+ CHANGE: Rcon / Ref, confirmation / errors returned to client
+ CHANGE: Bot respawn set a fraction longer
+
+PK++ 0.7.1.62
+=============
+
+ ADD: Rcon, Cfg.RconPass | \rconpass <pass> on client and server, then \rcon <console commands> on client
+ ADD: Referee. Like rcon but only on callvote-allowed commands. Referees can be callvoted, or use RefPass in the same way as RconPass.
+ ADD: Optional coloured icons for hud Cfg.ColouredIcons | \colouredicons [0/1]
+ ADD: Optional desaturated-colour scoreboard Cfg.AltScoreboard | \altscoreboard [0/1]
+ ADD: Cfg.CustomCrosshairLocation = true/false , Cfg.CustomCrosshairLocationX, Cfg.CustomCrosshairLocationY
+ ADD: Restartmap , starts new map without reloading the map (or optionally <callvote> \restartmap)
+ ADD: Cfg.BotQuickRespawn added for quicker bot respawn
+ ADD: Cfg.BotFakePing (visual only)
+ ADD: <callvote> \saferespawn [0/1]
+ ADD: Forcespec / Cfg.Forcespec  - forces newcomers to a game into specmode regardless of join type
+ ADD: Cfg.AutoTeamLock = true/false - Automatically locks the teams in the last second on pre-match count down
+ ADD: TeamLock | <callvote> teamlock [0/1] - keeps specs from joining game.
+ ADD: \exec <config> | \writeconfig <config> added
+ ADD: Scoreboard packetloss Cfg.ScoreboardShowPacketLoss [true/false] | \ScoreboardShowPacketLoss [0/1]
+ ADD: DuelQueue (Cfg.DuelQueue), will swap loser with spec who has waited longest on starting a new map
+ ADD: Cfg.AutoStatsDump - Dumps the weapon stats to a file (on server or client).
+ ADD: ammolisthideweapons [0/1] (Cfg.AmmolistHideWeapons = true/false) Hides missing weapons.
+ FIX: Ping issues on PK++ server
+ FIX: Map change code tweak (related to autorecord)
+ FIX: Demolist
+ FIX: Crosshairsize now works correct from the menu
+ FIX: Armour not showing in spectator mode in simplehud
+ FIX: Bots stubbing noses in fights on corners
+ CHANGE: Bot goal location movement tweak
+ CHANGE: Cfg.CrosshairNamesDisabledInDuel added
+ CHANGE: Game uses restartmap for normal map changes
+ CHANGE: botminplayers logic tweaked
+ CHANGE: Falling damage removed from ProPlus mode
+ CHANGE: Logfile now based per day rather than per server restart per day
+ CHANGE: StatsDump fixed to request latest stats
+
+PK++ 0.6.1.62
+=============
+
+ FIX: Font sizes tweaked on scoreboard for 'lower' resolutions and 'high' resolutions.
+ FIX: DM_Mine loc file corruption
+ FIX: Small ProPlus telefrag bug
+ ADD: Timer position control Cfg.ShowTimerX/Cfg.ShowTimerY | \ShowTimerX \ShowTimerY
+ ADD: TeamOverlay position control Cfg.TeamOverlayX/Cfg.TeamOverlayY | \TeamOverlayX \TeamOverlayY
+ ADD: Teamscores position control Cfg.TeamScoresX/Cfg.TeamScoresY | \TeamScoresX \TeamScoresY
+ ADD: TeamOverlay width control Cfg.TeamOverlayW | \Cfg.TeamOverlayX
+ ADD: Timer font size control Cfg.ShowTimerFontSize | \ShowTimerFontSize
+ ADD: Teamscores font size control Cfg.TeamScoresFontSize | \TeamScoresFontSize
+ ADD: Teamoverlay font size control Cfg.TeamOverlayFontSize | \TeamOverlayFontSize
+
+PK++ 0.5.1.62
+=============
+
+ FIX: Bug with ProPlus callvote taking time to update clients / sometimes not working
+ FIX: Autorecord fixed
+ FIX: Bots voting bug
+ ADD: Old Scoreboard support, Cfg.OldScoreboard = true/false, and \oldscoreboard 1/0
+ ADD: 'Soft' item tracking for bot - Cfg.BotFindItems = true
+ FIX: Some minor GUI issues
+ ADD: HUD ping, Cfg.ShowPing = true/false and \showping 1/0
+ ADD: SimpleHUD for specmode
+ FIX: Config based FPS limit 125->150
+ ADD: SimpleHud command added
+
+PK++ 0.4.1.62
+=============
+
+ ADD: Bots for online and offline play (!)
+ ADD: Backwards/Forwards compatible network protocol layer*
+ ADD: Specmode fix, info in HUD*
+ ADD: New specmode camera modes: followcam, staticcam, autocam
+ ADD: Mapview, HLTV style bird's eye view while in spec
+ ADD: Map loading screens
+ ADD: New scoreboards for tdm, ffa, duel
+ ADD: Team overlay with loc file support
+ ADD: Crosshairnames
+ ADD: Logging for server and client
+ ADD: Weapon Stats*
+ ADD: Forcemodel
+ ADD: Allready / breakmatch
+ ADD: Simplehud
+ ADD: New crosshairs
+ ADD: New hitsounds/killsounds
+ ADD: Direct input on/off modes
+ ADD: Test arena warmup map
+ ADD: Match overtime
+ ADD: ProPlus mode, 150dmg stake, no telefrags, 50% bronze protection, 25% increase in stake-nade blast
+ CHANGE: Fragmessages
+ CHANGE: Game fonts
+ ADD: Eliza module for hybrid bot 'chat'
+ ADD: New hitsounds/killsounds
+ CHANGE: Teleport radius and stakenade dmg strength inline with CPL requirements*
+ CHANGE: SafeRespawns added
+
+*requires PK++ installed on server.**
+** NOTE: It will take up to 20 seconds for you to auth with a PK++ server, be patient! Once authed you will recieve stats and info in spec HUD.
+
+PK++ 0.4.1.62 (Internal)
+========================
+
+ CHANGE: Bots now retain names between maps/adds during game sesssion and kicks
+ CHANGE: Bots 'bored' time decreased
+ CHANGE: Bots level 10 turn speed decreased
+ CHANGE: Bots range-based weapons tweaked
+
+PK++ 0.3.1.61 (CPL Turkey Edition)
+==================================
+
+ FIXED: FOV bug in GUI
+ FIXED: Changing brightskins in GUI
+ FIXED: Timer not moving to center
+ FIXED: Frag messages not showing correctly
+ FIXED: Chaingun sound(?) - may be still b0rked
+ FIXED: Sticking to walls
+ ADD: 'Steamfish' - auto download tool (resides in Data as Updater.exe)
+ ADD: Frag messages
+ ADD: Ability to view demos in recordings folder with '\demolist'
+ ADD: New console command '\users' - lists players in server, along with ping/status
+ ADD: On-screen PLAYER VS PLAYER text in warmup
+ ADD: New options to GUI - frag messages/timer pos/etc
+ ADD: New startup screen
+ ADD: New background for GUI
+ ADD: Multi language support
+ ADD: Locked down console - in version sent to CPL only.
+ CHANGE: Spectator text
+ CHANGE: Moved warmup text
+ CHANGE: Optimized Hud icons for better performance
+
+PK++ 0.2.1.61
+=============
+
+ FIXED: PROHUD not rendering correctly
+ FIXED: PROHUD not showing SMG
+ FIXED: overtime not working in Duel mode
+ ADD: Overtime to listen server GUI
+ ADD: 1.61 support
+
+PK++ 0.1.0.35
+=============
+
+ ADD: PROHUD
+ ADD: hitsound
+ ADD: killsound
+ ADD: fov, timer and brightskins to GUI
+ ADD: overtime
