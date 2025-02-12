@@ -1,0 +1,97 @@
+PK++ Mod for Painkiller
+=======================
+
+Date:      15:44 16/05/2005
+Site:      http://www.pkeuro.com
+Contact:   mods@pkeuro.com
+Version:   1.2.1.62
+
+Known PCF/Game Core Bugs
+========================
+
+BUG: Stakes still fire off spawn
+BUG: Linux dedicated has issues with finding maps
+BUG: Next weapon does not queue properly (example: fire rocket, hit stake bind, hit sg bind, both before rocket reload is done. Next weapon is stake, not sg)
+BUG: Demo playback does not interpolate players' movements.
+BUG: Two different sounds still play when weapon switching + firing.
+BUG: Gold Armor invisible. At times the Gold Armor is invisible for a certain player. Sometimes other items on a map are invisiable to a single player - mostly happens on absinthe
+BUG: Delay with changing/firing weapons. Sometimes it will take a long time for e.g. the Rocket Launcher to fire after you just switched to it from e.g. the shotgun. Happens to all weapons I believe.
+BUG: Directional rocket splash. Rockets fired in front of you will not slow you down, but speed you up. Happens both when the opponent shoots a rocket to your feet and when you yourself shoot a rocket in front of you.
+BUG: Getting stuck and receiving a lot of falling damage after coming back to the ground. When you get stuck at e.g. Silver Armor on Sacred on the broken steps you'll lose 60+ health when you hit the ground again. 
+BUG: Server sometimes drops to low fps, clients on server drop also. Known since 1.4. Even seen in tournament final in Turkey.
+BUG: Listen server/Dedicated server sometimes start in slowmotion mode, only a restart fixes it.
+BUG: Occasionally one client will connect to a server and move in slowmotion.
+BUG: Linux server doesn't support commandline options
+BUG: Grenades fire off-target when moving
+BUG: Stakenades go through walls
+BUG: Console key does not work in menu on some regional Windows versions
+
+
+General TODO List
+=================
+
+Bot
+===
+
+ ADD: Waypoints to be redone for all maps
+ ADD: Behaviour parameters tweaking
+ ADD: Bot RJ
+ ADD: Bot team behaviour
+
+Spectator
+=========
+
+ ADD: Spec support for bots
+ ADD: Mapview images and configs for all maps
+ BUG: Spectator interpolation for demo
+ REQUEST: Show HUD on demo playback - HUD will show if demo is watched in specmode
+
+HUD/GUI/GFX
+==============
+
+ ADD: Scoreboard/team overlay Q/F/M/P indication
+ ADD: Loc's for all maps
+ ADD: Stats overlay
+ ADD: CTF flag state indication
+ ADD: Vote options GUI
+ ADD: Simple items / super low gfx mode
+ REQUEST: Give timer, player name, health, etc text an outline (shadow) - Will do (as option)
+ CHANGE: Frag difference in teamscores
+ FIX: Change mode not working in simplehud correctly
+ ADD: Teammate health/armour to crosshairnames and/or locs
+ ADD: Add tertiary colours pink, orange, brown etc to brightskins
+ ADD: Option to remove NET from scoreboard?
+
+Sounds
+======
+
+ ADD: Low ammo sounds
+ ADD: Painkiller frag sound
+ ADD: Vote sounds
+ FIX: PCF's missing game sounds bug
+ BUG: Two different sounds still play when weapon switching + firing. - Will look at.
+ ADD: Friendly fire hit
+ ADD: Make a hitsound for freezer for BOTH sides so you know if you hit someone and they know if they've been hit.
+
+Game/Gameplay
+=============
+
+ BUG: Stakes still fire off spawn - Probably requires PCF fix, will look at
+ CHANGE: ProPlus Give SG a fixed spread (like in CPMA) - awaiting player feedback
+ ADD: MD5 cdkey hash communicated to server for GUIDS
+ ADD: Clan Arena
+ ADD: BOOH weapons to Voosh
+
+Other
+=====
+
+ ADD: Autodownload PK++ / Maps
+ ADD: New maps for CA, TDM
+ FIX: Low fps bug - Missile Controller Code?
+ BUG: Delay with changing/firing weapons. - I believe this is intentional
+ BUG: Shotgun secondary fire (Freezer) does NOT work. - Does anyone actually use this weapon? Perhaps in ProPlus it should inflict damage?
+ BUG: Getting stuck - Physics bug, requires PCF fix unless I just remove ALL falling damage :/
+
+
+Notes from http://forums.thecpl.com/ubb/ultimatebb.php?ubb=get_topic;f=27;t=000265 (thanks btw)
+If you find any other bug threads, please email to mods@pkeuro.com
