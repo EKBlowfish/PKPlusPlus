@@ -1,0 +1,105 @@
+PK++ Mod for Painkiller
+=======================
+
+Date:      15:44 16/05/2005
+Site:      http://www.pkeuro.com
+Contact:   mods@pkeuro.com
+Version:   1.2.1.64
+
+General Mod Overview
+====================
+
+PK++ is a modification for the game Painkiller, specifically made for
+tournaments, online, and offine play. The mod consists of the follow .Pak files:
+
+	PKPlus.pak
+	PKPlusData.pak
+	Fonts.pak
+	Locs.pak
+	Waypoints.pak
+	Mapview.pak
+	Hitsounds.pak
+
+Which are to be located in your \Painkiller\Data\ directory. To start the game
+with PK++ loaded, add -lscripts PKPlus.pak in the command line, such that the
+game is run:
+
+\Painkiller\Bin\Painkiller.exe -lscripts PKPlus.pak
+
+On running the first time, your game may create some external folders. You may
+edit the contents at your own risk.
+
+NOTE: How to run with ASE, QTracker etc. :
+
+	Edit your game executable in the application options to run 
+		
+	Painkiller.exe -lscripts pkplus.pak
+
+NOTE: This mod version requires that you have the latest PK version installed.
+
+
+Running Windows or Linux Dedicated Server
+=========================================
+
+Windows:
+
+\Painkiller\Bin\Painkiller.exe -dedicated -config config.ini -lscripts PKPlus.pak
+
+Linux:
+
+Rename the PKPlus.pak to LScripts.pak replacing the original one. Run in the 
+usual way. The 1.62 PK Linux server is not accepting command lines parameters due
+to PCF's oversight, so renaming of PKPlus.pak to LScripts.pak is required.
+
+Steamfish Updater
+=================
+
+For Windows client and server versions of the mod, an automatic update utility
+has been provided to ensure that you have the latest version of the mod. You can
+find this utility in \Painkiller\Data\Updater.exe This will update your mod to
+the latest version.
+
+NOTE: Do not run this utility while Painkiller is running, or the update will
+not be successful.
+
+Team Recruitment
+================
+
+If you would like to join the mod team currently working on PK++ and you think
+you have what it takes please contact the ops in IRC: #painkiller.euro @ qnet.
+
+All content of this mod is © www.pkeuro.com. All rights Reserved.
+
+Community Links/Info
+====================
+
+http://www.pkeuro.com - Painkiller's #1 community site, features things such as
+demos, movies, latest news and much much more.
+http://www.thecpl.com - The website of the CPL, the worlds largest E-Sports
+event. Also the company running the world tour.
+http://www.cplworldtour.com - The CPL World Tour website.
+http://www.peoplecanfly.com - Painkiller's developer.
+http://www.dreamcatchergames.com - Painkiller's publisher.
+
+Thanks
+======
+
+DI-MeisterM for some of the map loading screens.
+Id software / OSP for some of the feature ideas.
+CPL for their endorsement.
+PKEURO.COM for hosting and assistance.
+Various testers for their help.
+B6 & PrimeviL for their coloured icons.
+All the players who've given feedback already.
+All other acknowledgements within game.
+
+Contributions
+=============
+
+Contributions of Loc files, Waypoint data files, or Mapview images/cfgs are
+welcome, and the best ones will be included in later packages.
+
+Feedback
+========
+For comments, suggestions for enhancements, and bug reports; email
+mods@pkeuro.com
